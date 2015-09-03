@@ -1,0 +1,4 @@
+<template name="lock">
+  <label><input type="checkbox" checked="{{current}}"/> Click to lock rosters. Coaches will no longer be able to add, edit, or delete students from their respective rosters. (This can be undone)</label>
+  <p><strong>Rosters are {{#if current}}<strong id="deadbeef">LOCKED</strong>{{else}}<strong id="alivebeef">UNLOCKED</strong>{{/if}}</strong></p>
+</template>

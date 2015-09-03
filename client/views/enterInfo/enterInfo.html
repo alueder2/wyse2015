@@ -1,0 +1,9 @@
+<template name="enterInfo">
+  <h1>School Information</h1>
+  <p class="bodytext"><strong>Welcome! Please enter the appropriate information below to get your school ready for WYSE 2015. Fields marked with an asterisk are required.</strong></p>
+
+  <div>
+    {{> quickForm id="enterInfo" schema=Schemas.schoolInfo collection="SchoolInfo" type="insert" omitFields="createdBy, paid" template="bootstrap3-horizontal"}}
+  </div>
+
+</template>

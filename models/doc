@@ -1,0 +1,5 @@
+This folder is reserved for all of the SimpleSchemas and Meteor collections (MongoDB databases) for the project.
+
+The messages are simply error messages that can be returned when necessary.
+
+The schema must be attached to the Meteor collection before it is used, which is done on line 42.

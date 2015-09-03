@@ -1,0 +1,15 @@
+<template name="myAccount">
+  <div class="bodytext">
+    <p>The current email we have on file for you is <strong>{{email}}</strong>.</p>
+    <p>Should you need to make changes to your roster or school information, please click the tabs above.</p>
+    <p>The total cost of your team for the 2015 competition is <strong>${{totalOwed}}</strong>.</p> 
+    {{#if hasNotPaid}} 
+      <p><strong id="noPayment">Currently, we do not have payment on file from you.</strong></p>
+    {{else}}
+      <p><strong id="payment">Payment has been received from your team!</strong></p>
+    {{/if}}
+
+    <p>Please make checks payable to University of Illinois; be as specific as you can when writing the check (include school name and school district - this will help us identify the checks as they come in). <strong>All payment is required before January 15, 2016.</strong></p>
+  </div>
+
+</template>

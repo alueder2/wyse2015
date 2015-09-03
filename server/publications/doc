@@ -1,0 +1,5 @@
+This folder is reserved for the necessary publication of the databases to the client. Without this, the data would only be viewable on the server side.
+
+'this.userId' is used quite often, since that is a very convenient feature of Meteor.js
+
+'Roles.userIsInRole' is used to detect if the current user is of an admin status. For example, Roles.userIsInRole(this.userId, 'site') checks to see if the current user is a site coordinator.

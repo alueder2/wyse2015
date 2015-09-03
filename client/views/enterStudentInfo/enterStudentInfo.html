@@ -1,0 +1,23 @@
+<template name="enterStudentInfo">
+  <h1>Student Information</h1>
+
+  {{#if notLocked}}
+
+    <p class="bodytext"><strong>Please enter the appropriate information below to get your your team ready for WYSE 2015. Fields marked with an asterisk are required.</strong></p>
+
+    <div>
+      {{> quickForm id="enterStudentInfo" type="update-pushArray" collection="Students" doc=foo scope="students" omitFields="answers1, answers2" template="bootstrap3-horizontal"}}
+    </div>
+      <strong class="bodytext">You've entered {{studentCount}}/{{studentMax}} students.</strong>
+    <br>
+    <br>
+
+  {{else}}
+
+    <h3 id="locked"><strong>Rosters for the 2015 competition have been locked.</strong></h3>
+
+  {{/if}}
+
+      {{> reactiveTable collection=test settings=settings}}
+
+</template>

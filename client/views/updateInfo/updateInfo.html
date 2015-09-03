@@ -1,0 +1,7 @@
+<template name="updateInfo">
+  <h1>School Information</h1>
+
+  <div>
+      {{> quickForm collection="SchoolInfo" id="updateInfo" doc=this schema=Schemas.schoolInfo type="update" omitFields="createdBy, paid" template="bootstrap3-horizontal"}}
+  </div>
+</template>

@@ -1,0 +1,39 @@
+<template name="navigation">
+
+  <div id="header">
+    <div id="header-title">
+      <h1>2015 WYSE Academic Competition</h1>
+      {{#if isSiteCoord}}
+        <h5>Site Coordinator View</h5>
+      {{/if}}
+    </div>
+        <nav class="navbar" role="navigation">
+            <div class="container">
+                    <ul class="nav navbar-nav" id="foo">
+              <li role="presentation" class="{{active '/'}}"><a href="{{pathFor route='home'}}">Home</a></li>
+
+              {{#if currentUser}}
+
+                {{#if infoExists}}
+                  <li class="{{active '/updateInfo'}}" hidden="{{isSiteCoord}}"><a href ="{{pathFor route='updateInfo'}}">Edit School Information</a></li>
+                  <li class="{{active '/enterStudentInfo'}}" hidden="{{isSiteCoord}}"><a href="{{pathFor route='enterStudentInfo'}}">Enter Student Information</a></li>
+                    <li class="{{active '/myAccount'}}" hidden="{{isSiteCoord}}"><a href="{{pathFor route='myAccount'}}">My Account</a></li>
+                {{else}}
+                  <li class="{{active '/enterInfo'}}" hidden="{{isSiteCoord}}"><a href="{{pathFor route='enterInfo'}}">Enter School Information</a></li>
+                {{/if}}
+                  <li class="{{active '/siteCoord'}}" hidden="{{isSiteCoord}}"><a href="{{pathFor route='siteCoord'}}">Site Coordinator Validation</a></li>
+
+                {{#if isSiteCoord}}
+                  <li class="{{active '/viewStudents'}}"><a href="{{pathFor route='viewStudents'}}">View Students</a></li>
+                {{/if}}
+
+
+
+              {{/if}}
+
+              <li><a href="#">{{> loginButtons}}</a></li>
+                    </ul>
+            </div>
+        </nav>
+  </div>
+</template>

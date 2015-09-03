@@ -1,0 +1,4 @@
+<template name="enterAnswers">
+    <h6>{{student}}</h6>
+    {{> quickForm id="answerEntry" type="update-pushArray" collection="Students" scope="students" fields="answers1, answers2" doc=data template="bootstrap3-horizontal"}}
+</template>

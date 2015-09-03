@@ -1,0 +1,123 @@
+input.error{
+    background-color:rgb(255, 231, 231);
+}
+
+h1 {
+  text-align: center;
+}
+
+h5 {
+  color: orange;
+  font-size: 28px;
+}
+
+td {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+
+#container {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   padding:2px;
+   text-align: center;
+}
+
+#contNav {
+  text-align: center;
+}
+
+#header-title {
+  border-bottom: 1px solid black;
+}
+
+#body {
+   padding:2px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+   position: fixed;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
+#foo {  
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  text-align: center;  
+  color: #000000;
+}
+
+#foo > li {
+  background-color: #FFFFFF;
+  color: #000000;
+
+}
+#foo > li > a:hover {
+  background-color: #FFF6F1;
+  color: #000000;
+}
+
+#foo > li > a:focus {
+  background-color: #FFD4B8;
+  color: #000000;
+}
+
+#students {
+	clear: all;
+}
+
+[data-required] label:after {
+  content: '*';
+  color: red;
+}
+
+#noPayment {
+  color: red;
+}
+
+#payment {
+  color: green;
+}
+
+#locked {
+  text-align: center;
+}
+
+#deadbeef {
+  font-size: 14 px;
+  color: red;
+}
+
+#alivebeef {
+  font-size: 14px;
+  color: green;
+}
+
+.bodytext {
+  text-align: center;
+}
+
+#title {
+  display: inline;
+  padding-left: 40px;
+  margin-bottom: 0px;
+}
+
+form { 
+margin: 0 auto;
+width:250px;
+}
