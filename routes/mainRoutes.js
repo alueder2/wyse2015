@@ -63,11 +63,9 @@ Router.configure({
 });
 
 var requireLogin = function() { 
-  if (! Meteor.user()) {
-   // If user is not logged in render landing page
+  if (! Meteor.user()) {  // If user is not logged in render landing page
    Router.go('home'); 
- } else {
-   //if user is logged in render whatever route was requested
+ } else { // If user is logged in render whatever route was requested
    this.next(); 
  }
 }
